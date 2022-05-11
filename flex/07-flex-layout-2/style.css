@@ -9,15 +9,15 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+
 
 }
 
 .header {
-  height: var(--header-height);
+  height: 72px;
   background: darkmagenta;
   color: white;
-  align-self: center;
   display: flex;
  align-items: center;
   width: 100%;
@@ -30,30 +30,42 @@ body {
   height: 72px;
   background: #eee;
   color: darkmagenta;
-  justify-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
-  width: 300px;
   background: royalblue;
-  display: flex;
-  flex-direction: column;
-  width: 600px;
-  height: calc(100vh - var(--footer-height) - var(--header-height));
-  flex: 1, 0, 100vh;
+  font-size: 24px;
+  flex-shrink: 0;
+  padding: 16px;
+  
 }
+
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
-  gap: 16px;
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
 }
+
+.cards {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 ul {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
+  white-space: nowrap;
+  width: 300px;
 }
 
 a {
@@ -61,13 +73,10 @@ a {
   color: #eee;
 }
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 32px;
-}
+
 
 .content {
+  flex: 1;
   display: flex;
 }
 
